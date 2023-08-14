@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Tours = () => {
-  return 
-    <div>tours</div>
+  return <div>tours</div>;
   
 };
 
