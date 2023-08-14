@@ -4,7 +4,7 @@
 }
 
 .hero__content{
-    font-size: 3.2rem;
+    font-size: 3.2em;
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -14,3 +14,4 @@
 .hero__content h1 .highlight{
     color: var(--secondary-color);
 }
+

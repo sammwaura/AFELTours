@@ -50,6 +50,15 @@ ul {
   text-decoration: none;
   color: #fff;
 }
+.primary__btn a:hover {
+  color: inherit;
+}
+.secondary__btn {
+  background: transparent !important;
+  color: #0b2727 !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
 
 .secondary__btn a {
   text-decoration: none;
@@ -59,4 +68,17 @@ ul {
 
 .secondary__btn a:hover {
   color: inherit;
+}
+
+.section__subtitle {
+  background: var(--secondary-color);
+  font-family: var(--subtitle-font-name);
+  width: max-content;
+  padding: 0px 0.5rem;
+  padding-right: 1rem;
+
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--heading-color);
 }
