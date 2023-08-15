@@ -8,6 +8,7 @@ import worldImg from '../assets/images/world.jpg';
 import Subtitle from '../shared/Subtitle';
 
 import SearchBar from '../shared/SearchBar';
+import ServiceList from '../services/ServiceList';
 
 
 const Home = () => {
@@ -49,6 +50,17 @@ const Home = () => {
       </Container>
     </section>
     { /* hero start */}
+    <section>
+      <Container>
+        <Row>
+          <Col lg='3'>
+            <h5 className='services__subtitle'>What we do</h5>
+            <h2 className='services__title'>We offer our best service & advice appropriately</h2>
+          </Col>
+          <ServiceList />
+        </Row>
+      </Container>
+    </section>
   </>
 };
 
