@@ -8,15 +8,15 @@ import './header.css';
 const nav__links = [
   {
     path:'/home',
-    display:'Home'
+    display:'Staycations'
   },
   {
     path: '/about',
-    display:'About'
+    display:'Hikes'
   },
   {
     path:'/tours',
-    display:'Tours'
+    display:'Ecotours'
   },
 ]
 
