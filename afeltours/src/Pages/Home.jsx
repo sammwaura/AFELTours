@@ -6,11 +6,12 @@ import heroImg2 from '../assets/images/hero2.avif';
 import heroVid from '../assets/images/heroVid.mp4';
 import worldImg from '../assets/images/world.jpg';
 import Subtitle from '../shared/Subtitle';
+import experienceImg from '../assets/images/experience.jpg';
 
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
-
+import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 
 const Home = () => {
   return <>
@@ -76,6 +77,62 @@ const Home = () => {
       </Container>
     </section>
     {/* end of tour section */}
+    {/* experience section start */}
+    <section>
+      <Container>
+        <Row>
+          <Col lg='6'>
+            <div className="experience__content">
+              <Subtitle subtitle={"Experience"} />
+                <h2>With all our experience <br /> we are committed to serve you </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Facere laborum, placeat minima rem earum deleniti nulla iure, 
+                   odio officiis quaerat veniam asperiores commodi laboriosam sapiente. 
+                   Quam odio quis minus aut.
+                </p>
+            </div>
+
+            <div className="counter__wrapper d-flex align-items-center gap-5">
+              <div className="counter__box">
+                <span>12k+</span>
+                <h6>Successful Trips</h6>
+              </div>
+              <div className="counter__box">
+                <span>2k+</span>
+                <h6>Regular Clients</h6>
+              </div>
+              <div className="counter__box">
+                <span>2+</span>
+                <h6>Years of experience</h6>
+              </div>
+            </div>
+          </Col>
+          <Col lg='6'>
+            <div className="experience__img">
+              <img src={experienceImg} alt="" />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    {/* experience section ends */}
+
+    {/* gallery section starts */}
+    <section>
+      <Container>
+        <Row>
+          <Col lg='12'>
+            <Subtitle subtitle={'Gallery'} />
+            <h2 className='gallery__title'>Our Gallery</h2>
+          </Col>
+          <Col lg='12'>
+          <MasonryImagesGallery />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
+    {/* gallery section ends */}
 
   </>
 };
