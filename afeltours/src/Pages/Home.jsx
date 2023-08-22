@@ -12,7 +12,7 @@ import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
-
+import Testimonials from '../components/Testimonial/Testimonials';
 const Home = () => {
   return <>
     <section>
@@ -133,6 +133,23 @@ const Home = () => {
     </section>
 
     {/* gallery section ends */}
+
+    {/* testimonials start */}
+
+    <section>
+      <Container>
+        <Row>
+          <Col lg='12'>
+            <Subtitle subtitle={'Our Clients Testimonials'} />
+            <h2 className='testimonial__title'>What our Clients say about us</h2> 
+          </Col>
+          <Col lg='12'>
+            <Testimonials />
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    {/* testimonials end */}
 
   </>
 };
