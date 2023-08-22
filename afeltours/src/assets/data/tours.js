@@ -15,12 +15,7 @@ const tours = [
         price: 15000 , 
         maxGroupSize: 6,
         desc: "this is the description",
-        reviews: [
-            {
-                name:"Mesh",
-                rating: 8,
-            },
-        ],
+        reviews: [],
         avgRating: 7,
         photo: tourImg,
         featured: true,
@@ -32,12 +27,7 @@ const tours = [
         price: 15000,
         maxGroupSize: 6,
         desc: "this is the description",
-        reviews: [
-            {
-                name:"Winnie",
-                rating: 8,
-            },
-        ],
+        reviews: [],
         avgRating: 7,
         photo: tourImg2,
         featured: true,
@@ -49,12 +39,7 @@ const tours = [
         price: 9000,
         maxGroupSize: 6,
         desc: "this is the description",
-        reviews: [
-            {
-                name:"Kefa",
-                rating: 7,
-            },
-        ],
+        reviews: [],
         avgRating: 7,
         photo: tourImg3,
         featured: true,
