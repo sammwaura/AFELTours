@@ -8,7 +8,7 @@ import './header.css';
 const nav__links = [
   {
     path:'/home',
-    display:'Staycations'
+    display:'Home'
   },
   {
     path: '/about',
@@ -16,7 +16,7 @@ const nav__links = [
   },
   {
     path:'/tours',
-    display:'Ecotours'
+    display:'Staycations'
   },
 ]
 

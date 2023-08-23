@@ -16,4 +16,4 @@ const FeaturedTourList = () => {
   );
 };
 
-export default FeaturedTourList
+export default FeaturedTourList;

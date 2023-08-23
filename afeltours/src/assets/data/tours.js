@@ -1,18 +1,18 @@
-import tourImg  from '../images/northCoast.png';
-import tourImg2  from '../images/southCoast.png';
-import tourImg3  from '../images/mtkenya.png';
-import tourImg4  from '../images/naivasha.png';
-import tourImg5  from '../images/mara.png';
-import tourImg6  from '../images/amboseli.png';
-import tourImg7  from '../images/amboseli.png';
-import tourImg8  from '../images/mara.png';
+import tourImg  from '../images/bamburi.jpg';
+import tourImg2  from '../images/leopard.webp';
+import tourImg3  from '../images/Mutara.jpg';
+import tourImg4  from '../images/capella.jpg';
+import tourImg5  from '../images/maraaaaa.jpg';
+import tourImg6  from '../images/tawi.jpeg';
+import tourImg7  from '../images/Saltlick.jpg';
+import tourImg8  from '../images/Kajiado.webp';
 
 const tours = [
     {
         id: 1,
         title:"North Coast",
-        city: "Kilifi",
-        price: 15000 , 
+        city: "Bamburi Beach Resort",
+        price: 32700, 
         maxGroupSize: 6,
         desc: "this is the description",
         reviews: [],
@@ -23,8 +23,8 @@ const tours = [
     {
         id: 2,
         title:"South Coast",
-        city: "Mombasa",
-        price: 15000,
+        city: "Leopard Beach Resort",
+        price: 39500,
         maxGroupSize: 6,
         desc: "this is the description",
         reviews: [],
@@ -35,8 +35,8 @@ const tours = [
     {
         id: 3,
         title:"Mt Kenya",
-        city: "Nanyuki",
-        price: 9000,
+        city: "Jambo Mutara Camp",
+        price: 47000,
         maxGroupSize: 6,
         desc: "this is the description",
         reviews: [],
@@ -47,8 +47,8 @@ const tours = [
     {
         id: 4,
         title:"Naivasha-Elementaita",
-        city: "Nakuru",
-        price: 13000,
+        city: "Capella resort & spa",
+        price: 19400,
         maxGroupSize: 6,
         desc: "this is the description",
         reviews: [
@@ -64,8 +64,8 @@ const tours = [
     {
         id: 5,
         title:"Maasai Mara",
-        city: "Narok",
-        price: 22000,
+        city: "Sekenani Camp",
+        price: 31300,
         maxGroupSize: 6,
         desc: "this is the description",
         reviews: [
@@ -81,8 +81,8 @@ const tours = [
     {
         id: 6,
         title:"Amboseli",
-        city: "Voi",
-        price: 19000,
+        city: "Tawi Lodge",
+        price: 39200,
         maxGroupSize: 6,
         desc: "this is the description",
         reviews: [
@@ -98,7 +98,7 @@ const tours = [
     {
         id: 7,
         title:"Tsavo",
-        city: "Voi",
+        city: "SaltLick",
         price: 15000,
         maxGroupSize: 6,
         desc: "this is the description",
