@@ -10,7 +10,7 @@ import tourImg8  from '../images/Kajiado.webp';
 const tours = [
     {
         id: 1,
-        title:"North Coast",
+        title: "North Coast",
         city: "Bamburi Beach Resort",
         price: 32700, 
         maxGroupSize: 6,

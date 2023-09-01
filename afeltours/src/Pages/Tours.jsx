@@ -18,7 +18,7 @@ const Tours = () => {
   useEffect(() => {
 
 
-    const pages = Math.ceil(5/ 8); //later will be used as backend data count
+    const pages = Math.ceil(5/ 4); //later will be used as backend data count
     setPageCount(pages);
   }, [page])
   return (
@@ -44,7 +44,9 @@ const Tours = () => {
               <div className="pagination d-flex align-items-center 
                 justify-content-center mt-4 gap-3">
                   {[...Array(pageCount).keys()].map(number => (
-                    <span key={number} onClick={number}>
+                    <span key={number} onClick={()=> setPage(number)}
+                    className={page === number ? 'active__page' : ''}
+                    >
                       {number + 1}
                     </span>
                   ))}
@@ -54,6 +56,7 @@ const Tours = () => {
         </Row>
       </Container>
     </section>
+    <Newsletter/>
     </>
   )};
 

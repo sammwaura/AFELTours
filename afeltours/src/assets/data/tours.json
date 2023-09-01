@@ -1,0 +1,90 @@
+[
+    {
+        "title":"North Coast",
+        "city": "Bamburi Beach Resort",
+        "price": 32700, 
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/bamburi.jpg",
+        "featured": true
+    },
+    {
+        "title":"South Coast",
+        "city": "Leopard Beach Resort",
+        "price": 39500,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/leopard.webp",
+        "featured": true
+    },
+    {
+        "title":"Mt Kenya",
+        "city": "Jambo Mutara Camp",
+        "price": 47000,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Mutara.jpg",
+        "featured": true
+    },
+    {
+        "title":"Naivasha-Elementaita",
+        "city": "Capella resort & spa",
+        "price": 19400,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/capella.jpg",
+        "featured": true
+    },
+    {
+        "title":"Maasai Mara",
+        "city": "Sekenani Camp",
+        "price": 31300,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 8,
+        "photo": "../images/maraaaaa.jpg",
+        "featured": true
+    },
+    {
+        "title":"Amboseli",
+        "city": "Tawi Lodge",
+        "price": 39200,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 8,
+        "photo": "../images/tawi.jpeg",
+        "featured": true
+    },
+    {
+        "title":"Tsavo",
+        "city": "SaltLick",
+        "price": 15000,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 8,
+        "photo": "../images/Saltlick.jpg",
+        "featured": true
+    },
+    {
+        "title":"Kajiado",
+        "city": "Kajiado",
+        "price": 15600,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    }
+]
