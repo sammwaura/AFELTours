@@ -2,8 +2,9 @@ import React from 'react';
 import '../styles/tour-details.css';
 import { Container, Col, Row, Form, ListGroup } from 'reactstrap';
 import { useParams } from 'react-router-dom';
-import tours from '../assets/data/tours';
+import tourData from '../assets/data/tours';
 import calculateAvgRating from '../utilis/avgRating';
+import  avatar from "../assets/images/ava1.jpg"
 
 
 const TourDetails = ()  => {
@@ -13,14 +14,16 @@ const TourDetails = ()  => {
   // static data 
   // later call our API & load data from DB
 
-  const tour = tours.find(tour => tour.id === id)
+  const tour = tourData.find(tour => tour.id == id);
 
   // destructure properties from tour object
 
-  const { title, photo, price, city, featured, reviews } = tour;
+  const { title, photo, desc, price, city, featured, reviews, maxGroupSize } = tour;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
 
+  // format date 
+  const options = {day:'numeric', month:'long', year:'numeric'};
   return (
     <>
     <section>
@@ -49,10 +52,60 @@ const TourDetails = ()  => {
 
                 <div className="tour__extra-details">
                   <span><i class="ri-map-pin-2-line"></i>{city}</span>
-                  <span><i class="ri-money-dollar-circle-line"></i> Ksh{price} / per person sharing</span>\
-                  <span><i class="ri-map-pin-2-line"></i>{city}</span>
+                  <span><i class="ri-money-dollar-circle-line"></i> Ksh{price} / PPS </span>
+                  <span><i class="ri-group-line"></i>group of {maxGroupSize}</span>
                 </div>
+                <h5>Description</h5>
+                <p>{desc}</p>
               </div>
+
+              {/* tour reviews section */}
+              <div className="tour__reviews mt-4">
+                <h4>Reviews({reviews?.length} reviews)</h4>
+
+                <Form>
+                  <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                  </div>
+
+                  <div className="review__input">
+                    <input type="text" placeholder='share your thoughts' />
+                    <button className="btn primary__btn text-white" type='submit'>
+                      submit
+                    </button>
+                  </div>
+                </Form>
+
+                <ListGroup className='user__reviews'>
+                  {
+                    reviews?.map(reviews=>(
+                      <div className="review__item">
+                        <img src={avatar} alt="" />
+
+                        <div className="w-100">
+                          <div className='d-flex align-items-center justify-content-between'>
+                            <div>
+                              <h5>Kefa</h5>
+                              <p>{new Date('02-09-2023').toLocaleDateString('en-US', options
+                              )}</p>
+                            </div>
+                            <span className='d-flex align-items-center'>
+                              5 <i class="ri-stars-s-fill"></i>
+                            </span>
+                          </div>
+                          <h6>Amazing tour</h6>
+                        </div>
+                      </div>
+                    ))
+                  }
+
+                </ListGroup>
+
+              </div>
+              {/* tour reviews section ends */}
             </div>
           </Col>
         </Row>
