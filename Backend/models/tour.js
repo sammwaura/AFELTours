@@ -22,6 +22,6 @@ const tourSchema = new mongoose.Schema(
     }
 );
 
-export default mongoose.model("tour", tourSchema);
+export default mongoose.model("Tour", tourSchema);
 
 
