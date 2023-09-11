@@ -4,16 +4,14 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 
+import tourRoute from './routes/tours.js';
+
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
 
 //database connection
-mongoose.connect("mongodb+srv://meshsami27:wamichwe01@cluster0.v3btrzr.mongodb.net/?retryWrites=true&w=majority");
 mongoose.set("strictQuery", false);
-mongoose.set('bufferCommands', false);
-
-
 const connect = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URI,
@@ -26,10 +24,6 @@ const connect = async () => {
     } catch (error) {
         console.log("MongoDB database not connected. Try again"); 
     }
-
-    mongoose.connection.on('error', err => {
-        console.log(err);
-      });
     
 };
 
@@ -37,6 +31,7 @@ const connect = async () => {
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
+app.use('/tours', tourRoute);
 
 app.listen(port, ()=>{
     connect();

@@ -20,10 +20,10 @@ export const createTour = async (req,res)=>{
                 });
 
     } catch (err) {
-        res.status(200)
+        res.status(500)
         .json
         ({
-            success:true, 
+            success:false, 
             message:'Not created. Try again', 
             data:savedTour,
         });
