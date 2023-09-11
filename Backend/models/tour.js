@@ -11,38 +11,34 @@ const tourSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        photo: {
-            type: String,
+        price: {
+            type: Number,
             required: true,
         },
         maxGroupSize: {
             type: Number,
             required: true,
         },
-        price: {
-            type: Number,
+        desc: {
+            type: String,
             required: true,
-        },
+        }, 
         reviews: [
             {
                 type: mongoose.Types.ObjectId,
                 ref: "Review",
             },
         ],
+        photo: {
+            type: String,
+            required: true,
+        },
         featured: {
             type: Boolean,
             default: false,
-        },
-        desc: {
-            type: String,
-            required: true,
-        }
-
-        
+        }, 
     },
     { timestamps: true }
 );
 
 export default mongoose.model("Tour", tourSchema);
-
-
