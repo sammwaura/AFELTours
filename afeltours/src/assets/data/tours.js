@@ -6,6 +6,14 @@ import tourImg5  from '../images/maraaaaa.jpg';
 import tourImg6  from '../images/tawi.jpeg';
 import tourImg7  from '../images/Saltlick.jpg';
 import tourImg8  from '../images/Kajiado.webp';
+import tourImg9  from '../images/sentrim.jpeg';
+import tourImg10  from '../images/Sun n Set.jpeg';
+import tourImg11  from '../images/epashikino.jpg';
+import tourImg12  from '../images/maiyaaan.jpg';
+import tourImg13  from '../images/swahili beach.jpeg';
+import tourImg14  from '../images/Elmer.jpeg';
+import tourImg15  from '../images/lake-naivasha-resort.jpg';
+
 
 const tours = [
     {
@@ -129,6 +137,127 @@ const tours = [
         photo: tourImg8,
         featured: true,
     },
+    {
+        id: 9,
+        title:"Naivasha-Gilgil",
+        city: "Sentrim Elementaita",
+        price: 26600,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg9,
+        featured: true,
+    },
+    {
+        id: 10,
+        title:"Diani",
+        city: "Sun N Sand Beach Resort",
+        price: 30000,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg10,
+        featured: true,
+    },
+    {
+        id: 11,
+        title:"Naivasha-Gilgil",
+        city: "Epashikino resort & spa",
+        price: 26600,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg11,
+        featured: true,
+    },
+    {
+        id: 12,
+        title:"Mt Kenya-Nanyuki",
+        city: "Maiyan Villas",
+        price: 15600,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg12,
+        featured: true,
+    },
+    {
+        id: 13,
+        title:"Diani",
+        city: "Swahili Beach",
+        price: 156600,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg13,
+        featured: true,
+    },
+    {
+        id: 14,
+        title:"Naivasha-Gilgil",
+        city: "Elmer resort & spa",
+        price: 15600,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg14,
+        featured: true,
+    },
+    {
+        id: 15,
+        title:"Naivasha",
+        city: "Lake Naivasha Resort",
+        price: 15600,
+        maxGroupSize: 6,
+        desc: "this is the description",
+        reviews: [
+            {
+                name:"Winnie",
+                rating: 8,
+            },
+        ],
+        avgRating: 7,
+        photo: tourImg15,
+        featured: true,
+    },
+    
+
 ];
 
 export default tours;

@@ -5,28 +5,27 @@ import Tour from '../models/Tour.js';
 
 //create new Tour
 
-export const createTour = async (req,res)=>{
-
+export const createTour = async (req, res) => {
     const newTour = new Tour(req.body);
 
     try {
         const savedTour = await newTour.save();
 
-        res.status(200)
-            .json({
-                success:true, 
-                message:'Successfully created',
-                data:savedTour,
-                });
+        res
+        .status(200)
+        .json({
+            success: true, 
+            message:'Successfully created',
+            data: savedTour,
+        });
 
     } catch (err) {
-        res.status(500)
+        res
+        .status(500)
         .json
         ({
             success:false, 
-            message:'Not created. Try again', 
-            data:savedTour,
-        });
+            message:'Not created. Try again'});
     }
 };
 

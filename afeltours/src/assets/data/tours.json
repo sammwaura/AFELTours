@@ -86,5 +86,82 @@
         "avgRating": 7,
         "photo": "../images/Kajiado.webp",
         "featured": true
+    },
+    {
+        "title":"Naivasha-Gilgil",
+        "city": "Sentrim Elementaita",
+        "price": 26000,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    },
+    {
+        "title":"Diani",
+        "city": "Sun N Sand Beach Resort",
+        "price": 30000,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    },
+    {
+        "title":"Naivasha Gilgil",
+        "city": "Epashikino resort & spa",
+        "price": 15600,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    },
+    {
+        "title":"Mt Kenya-Nanyuki",
+        "city": "Maiyan Villas",
+        "price": 15600,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    },
+    {
+        "title":"Diani",
+        "city": "Swahili Beach",
+        "price": 156600,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    },
+    {
+        "title":"Naivasha",
+        "city": "ELmer Resort & Spa",
+        "price": 15600,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
+    },
+    {
+        "title":"Naivasha",
+        "city": "Lake Naivasha Resort",
+        "price": 15600,
+        "maxGroupSize": 6,
+        "desc": "this is the description",
+        "reviews": [],
+        "avgRating": 7,
+        "photo": "../images/Kajiado.webp",
+        "featured": true
     }
 ]
