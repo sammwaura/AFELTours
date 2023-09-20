@@ -4,6 +4,6 @@ import { verifyUser } from '../utilis/verifyToken.js';
 
 const router = express.Router();
 
-router.post('/:tourId', verifyUser, createBooking);
+router.post('/', verifyUser, createBooking);
 
 export default router;
