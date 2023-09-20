@@ -1,9 +1,9 @@
 import express from 'express';
-import { createReview } from '../controllers/reviewController.js';
+import { createBooking } from '../controllers/bookingController.js';
 import { verifyUser } from '../utilis/verifyToken.js';
 
 const router = express.Router();
 
-router.post('/:tourId', verifyUser, createReview );
+router.post('/:tourId', verifyUser, createBooking);
 
 export default router;
