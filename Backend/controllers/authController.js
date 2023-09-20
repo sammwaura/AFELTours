@@ -74,6 +74,7 @@ export const login = async (req, res) => {
         .json({
             token,
             data: { ...rest },
+            role,
             });
     } catch (err) {
          res

@@ -26,7 +26,7 @@ const tourSchema = new mongoose.Schema(
         reviews: [
             {
                 type: mongoose.Types.ObjectId,
-                ref: "Review",
+                ref: "Reviews",
             },
         ],
         photo: {
