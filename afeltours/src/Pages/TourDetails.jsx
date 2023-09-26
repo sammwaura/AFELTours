@@ -20,6 +20,8 @@ const TourDetails = ()  => {
 
   const tour = tourData.find(tour => tour.id == id);
 
+  console.log(id);
+
   // destructure properties from tour object
 
   const { title, photo, desc, price, city, featured, reviews, maxGroupSize } = tour;
