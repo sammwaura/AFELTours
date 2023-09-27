@@ -18,7 +18,7 @@ const TourDetails = ()  => {
   // static data 
   // later call our API & load data from DB
 
-  const tour = tourData.find(tour => tour._id === _id);
+  const tour = tourData.find(tour => tour._id == _id);
 
   // destructure properties from tour object
 

@@ -3,7 +3,6 @@ import CommonSection from '../shared/CommonSection';
 
  
 import '../styles/tours.css';
-import tourData from '../assets/data/tours';
 import TourCard from '../shared/TourCard';
 import SearchBar from '../shared/SearchBar';
 import Newsletter from '../shared/Newsletter';
@@ -18,7 +17,7 @@ const Tours = () => {
   const [pageCount, setPageCount ] = useState(0);
   const [page, setPage] = useState(0);
 
-  const { data: tours, loading, error } = useFetch(`${BASE_URL}/tours`);
+  const { data: tours, loading, error } = useFetch(`${BASE_URL}/tours=${page}`);
   const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
 
@@ -26,9 +25,10 @@ const Tours = () => {
   useEffect(() => {
 
 
-    const pages = Math.ceil(tourCount / 4); 
+    const pages = Math.ceil(tourCount / 8); 
     setPageCount(pages);
-  }, [page, tourCount])
+    window.scrollTo(0,0);
+  }, [page, tourCount, tours])
   return (
     <>
     <CommonSection title={"Staycations"} /> 
@@ -42,7 +42,7 @@ const Tours = () => {
     <section className='pt-0'>
       <Container>
         {
-          loading && <h4 className='text-center pt-5'>Laoding.....</h4>
+          loading && <h4 className='text-center pt-5'>Loading.....</h4>
         }
         {
           error && <h4 className='text-center pt-5'>{error}</h4>
