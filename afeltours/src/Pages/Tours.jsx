@@ -20,11 +20,7 @@ const Tours = () => {
   const { data: tours, loading, error } = useFetch(`${BASE_URL}/tours=${page}`);
   const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
-
-
   useEffect(() => {
-
-
     const pages = Math.ceil(tourCount / 8); 
     setPageCount(pages);
     window.scrollTo(0,0);

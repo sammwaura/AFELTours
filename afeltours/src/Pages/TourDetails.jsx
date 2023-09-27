@@ -7,18 +7,18 @@ import calculateAvgRating from '../utilis/avgRating';
 import  avatar from "../assets/images/ava1.jpg";
 import Booking from '../components/Booking/Booking';
 import Newsletter from '../shared/Newsletter';
+import useFetch from '../hooks/useFetch';
+import { BASE_URL } from '../utilis/config';
 
 
 const TourDetails = ()  => {
 
-  const {_id} = useParams();
+  const {id} = useParams();
   const reviewMsgRef = useRef('')
   const [tourRating, setTourRating] = useState(null)
 
-  // static data 
-  // later call our API & load data from DB
-
-  const tour = tourData.find(tour => tour._id == _id);
+  // fetch data from Database
+  const { data: tour } = useFetch(`${BASE_URL}/tours/${id}`);
 
   // destructure properties from tour object
 
@@ -38,8 +38,6 @@ const TourDetails = ()  => {
 
     // later we call our api
   }
-
-
   return (
     <>
     <section>
