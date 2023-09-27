@@ -17,14 +17,15 @@ const Tours = () => {
   const [pageCount, setPageCount ] = useState(0);
   const [page, setPage] = useState(0);
 
-  const { data: tours, loading, error } = useFetch(`${BASE_URL}/tours=${page}`);
+  const { data: tours, loading, error, } = useFetch(`${BASE_URL}/tours?page=${page}`);
   const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
   useEffect(() => {
     const pages = Math.ceil(tourCount / 8); 
     setPageCount(pages);
     window.scrollTo(0,0);
-  }, [page, tourCount, tours])
+  }, [page, tourCount, tours]);
+
   return (
     <>
     <CommonSection title={"Staycations"} /> 
@@ -37,14 +38,10 @@ const Tours = () => {
     </section>
     <section className='pt-0'>
       <Container>
-        {
-          loading && <h4 className='text-center pt-5'>Loading.....</h4>
-        }
-        {
-          error && <h4 className='text-center pt-5'>{error}</h4>
-        }
-      {
-        !loading && !error && <Row>
+        {loading && <h4 className='text-center pt-5'>Loading.....</h4>}
+        {error && <h4 className='text-center pt-5'>{error}</h4>}
+      {!loading && !error && 
+      <Row>
         { tours?.map( tour => ( 
           <Col lg='3' className='mb-4' key={ tour._id }>
           <TourCard tour = { tour }/>
