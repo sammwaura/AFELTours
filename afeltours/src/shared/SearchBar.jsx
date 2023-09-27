@@ -2,7 +2,6 @@ import React, {useRef} from 'react';
 import './search-bar.css';
 import { Col, Form, FormGroup } from "reactstrap";
 
-import { BASE_URL } from './../utilis/config';
 import { useNavigate } from 'react-router-dom';
 
 const SearchBar = () => {
@@ -22,11 +21,10 @@ const SearchBar = () => {
             return alert('All fields are required!!')
         }
 
-        const res = await fetch(`http://localhost:4000/api/v1/tours/search?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`);
-
-        if(!res.ok) alert('Something went wrong');
+        const res = await fetch(`http://localhost:4000/api/v1/tours/search/getTourBySearch?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`);
 
         console.log(res);
+        if(!res.ok) alert('Something went wrong');
 
         const result = await res.json();
 

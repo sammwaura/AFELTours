@@ -11,16 +11,14 @@ import Newsletter from '../shared/Newsletter';
 
 const TourDetails = ()  => {
 
-  const {id} = useParams();
+  const {_id} = useParams();
   const reviewMsgRef = useRef('')
   const [tourRating, setTourRating] = useState(null)
 
   // static data 
   // later call our API & load data from DB
 
-  const tour = tourData.find(tour => tour.id == id);
-
-  console.log(id);
+  const tour = tourData.find(tour => tour._id === _id);
 
   // destructure properties from tour object
 

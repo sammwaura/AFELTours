@@ -8,8 +8,6 @@ const FeaturedTourList = () => {
 
   const { data: featuredTours, loading, error } = useFetch('http://localhost:4000/api/v1/tours');
 
-  console.log(featuredTours);
-
   return (
     <>
     { loading && <h4>Loading........</h4> }

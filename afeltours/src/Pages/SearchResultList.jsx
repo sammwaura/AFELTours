@@ -4,8 +4,6 @@ import { Container, Row, Col } from 'reactstrap';
 import TourCard from './../shared/TourCard';
 import { useLocation } from 'react-router-dom';
 
-
-
 const SearchResultList = () => {
   const location = useLocation()
    
@@ -22,11 +20,8 @@ const SearchResultList = () => {
               <TourCard tour={tour} />
             </Col>
           ))
-        }
-
+        };
       </Row>
-
-
     </Container>
   </section>
 
