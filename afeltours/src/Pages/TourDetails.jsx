@@ -16,20 +16,35 @@ const TourDetails = ()  => {
   const reviewMsgRef = useRef('');
   const [tourRating, setTourRating] = useState(null);
 
+ 
+
   // fetch data from DB
 
-  const { data : tour, loading, error } = useFetch(`http://localhost:4000/api/v1/tours/'${_id}`);
-  
- 
+  const {url, loading, error} = `http://localhost:4000/api/v1/tours`;
+
+
+
+  fetch(url)
+        .then(res => {
+        if(!res.ok){
+          throw new Error(`HTTP ERROR! Status: ${res.status} `);
+        }
+        return res.json();
+      })
+        .then(tour => {
+          const {title, photo, desc, price, city, reviews, maxGroupSize} = tour;
+
+
+       
+      
+
+  // const { data : tour, loading, error } = useFetch(`http://localhost:4000/api/v1/tours/'${id}`);
 
      // destructure properties from tour object
 
-  const { title, photo, desc, price, city, featured, reviews, maxGroupSize } = tour;
-
-
+  // const { title, photo, desc, price, city, reviews, maxGroupSize } = tour;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
-
 
   // format date 
   const options = {day:'numeric', month:'long', year:'numeric'};
@@ -39,15 +54,14 @@ const TourDetails = ()  => {
     e.preventDefault()
     const reviewText = reviewMsgRef.current.value;
 
-
     // later we call our api
   };
 
-  useEffect(() => {
-    window.scrollTo(0,0)
-  }, [tour]);
 
 
+  // useEffect(() => {
+  //   window.scrollTo(0,0)
+  // }, []);
   return (
     <>
     <section>
@@ -153,6 +167,7 @@ const TourDetails = ()  => {
     <Newsletter />
     </>
   );
+ });
 };
 
 
