@@ -3,37 +3,69 @@ import './booking.css';
 import { Form, FormGroup, ListGroup, ListGroupItem, Button} from 'reactstrap';
 
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthContext';
+import { useContext } from 'react';
+
 
 const Booking = ({ tour, avgRating }) => {
 
-    const {price, reviews} = tour;
-    const navigate =  useNavigate()
+    const {price, reviews, title } = tour;
+    const navigate =  useNavigate();
 
-    const [credentials, setCredentials] = useState({
-        userId: '01', //later dynamic
-        userEmail: 'info@africanforestsescapade.com',
+    const { user } = useContext(AuthContext);
+
+
+    const [booking, setBooking] = useState({
+        userId: user && user._id,
+        userEmail: user && user.email,
+        tourName: title,
         fullName: '',
         phone:'',
         guestSize: 1,
-        bookAt: ''
+        bookAt: '',
 
     });
 
     const handleChange = e => {
-        setCredentials(prev=>({...prev, [e.target.id]:e.target.value}))
+        setBooking(prev=>({...prev, [e.target.id]:e.target.value}))
     };
 
     const serviceFee = 1000
-    const totalAmount = Number(price) * Number(credentials.guestSize) + Number(serviceFee)
+    const totalAmount = Number(price) * Number(booking.guestSize) + Number(serviceFee)
 
 
     // send data to the server
 
-    const handleClick = e=>{
-        e.preventDefault()
+    const handleClick = async e=>{
+        e.preventDefault();
 
-    navigate("/thank-you");
-    }
+        console.log(booking);
+
+        try {
+            if(!user || user===undefined || user===null){
+                return alert('please sign in')
+            } 
+
+            const res = await fetch(`http://localhost:4000/api/v1/booking`,
+            {
+                method:'post',
+                headers:{
+                    'content-type':'application/json'
+                },
+                credentials:'include',
+                body:JSON.stringify(booking)
+            })
+
+            const result = await res.json()
+
+            if(!res.ok){
+                return alert(result.message)
+            }
+            navigate("/thank-you")
+        } catch (err) {
+            alert(err.message)
+        }
+    };
 
   return (
     <div className='booking'>
