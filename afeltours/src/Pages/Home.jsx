@@ -27,8 +27,13 @@ const Home = () => {
               </div>
               <h1>AFELTours 
                 <span className='highlight'> converging nature & leisure</span> </h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt itaque pariatur quia excepturi numquam est rem architecto quaerat, 
-                  odio tenetur dolorum optio possimus officiis veniam illo officia obcaecati debitis laboriosam.</p>
+                <p>AFEL stands for African Forests Escapade Limited. 
+                  We are a limited company registered in Kenya to
+                  promote eco-tourism and conservation of nature. The headquarters are in Nairobi, Colours house,
+                   Ruaraka, off Outering Road. We are a safari hub specializing on African woodlands ecotours. 
+                  We offer services that include booking safaris, corporates events, forest ecotours, 
+                  mountain climbing expeditions and visit to cultural centres.
+                </p>
             </div>
           </Col>
 
@@ -86,25 +91,25 @@ const Home = () => {
             <div className="experience__content">
               <Subtitle subtitle={"Experience"} />
                 <h2>With all our experience <br /> we are committed to serve you </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   Facere laborum, placeat minima rem earum deleniti nulla iure, 
-                   odio officiis quaerat veniam asperiores commodi laboriosam sapiente. 
-                   Quam odio quis minus aut.
+                <p>We exist to help you realize your dreams holiday, corporate events, and other outdoor activities in serene environment. 
+                  We believe our clients deserves careful planning of your holiday/ events based on your resources and dedicated time. 
+                  Working with you one-on-one, you will find a reliable and passionate tour operator capable of taking charge of your corporate events, 
+                  African woodland’s safari, and travel arrangements within your preferred budget range.
                 </p>
             </div>
 
             <div className="counter__wrapper d-flex align-items-center gap-5">
               <div className="counter__box">
-                <span>12k+</span>
-                <h6>Successful Trips</h6>
+                <span>1200</span>
+                <h6>Resort Staycations</h6>
               </div>
               <div className="counter__box">
-                <span>2k+</span>
+                <span>1000</span>
                 <h6>Regular Clients</h6>
               </div>
               <div className="counter__box">
-                <span>2+</span>
-                <h6>Years of experience</h6>
+                <span>200</span>
+                <h6>Corporate Events</h6>
               </div>
             </div>
           </Col>

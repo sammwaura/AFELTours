@@ -23,12 +23,11 @@ const SearchBar = () => {
 
         const res = await fetch(`http://localhost:4000/api/v1/tours/search/getTourBySearch?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`);
 
-        console.log(res);
         if(!res.ok) alert('Something went wrong');
 
         const result = await res.json();
 
-        navigate(`/tours/search?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`,
+        navigate(`/tours/search/getTourBySearch?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`,
          { state: result.data }
          );
     };

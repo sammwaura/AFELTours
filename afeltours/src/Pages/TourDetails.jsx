@@ -12,7 +12,7 @@ import { useContext } from 'react';
 
 const TourDetails = ()  => {
 
-  const { id } = useParams();
+  const { _id } = useParams();
   const reviewMsgRef = useRef('');
   const [tourRating, setTourRating] = useState(null);
   const { user } = useContext(AuthContext); 
@@ -21,7 +21,7 @@ const TourDetails = ()  => {
 
   // fetch data from DB
 
-  const {url, loading, error} = `http://localhost:4000/api/v1/tours/${id}`;
+  const {url, loading, error} = `http://localhost:4000/api/v1/tours/${_id}`;
 
 
 
@@ -67,7 +67,7 @@ const TourDetails = ()  => {
         rating:tourRating
       }
 
-      const res = await fetch(`http://localhost:4000/api/v1/review/${id}`, {
+      const res = await fetch(`http://localhost:4000/api/v1/review/${_id}`, {
         method:'post',
         headers:{
           'content-type':'application/json',

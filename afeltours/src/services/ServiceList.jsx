@@ -10,18 +10,18 @@ import customizationImg  from '../assets/images/stayca.png'
 const servicesData = [
     {
         imgUrl: weatherImg,
-        title: "Corporate Events",
-        desc: 'This includes; team building, workshop conferences, end of year parties'
+        title: "Resort Staycations",
+        desc: 'This is being our main service, we are committed to seeing our clients, both citizens & non-citizen staycate to resorts & villas that we have contracts with'
     },
     {
         imgUrl: guideImg,
-        title: "Hiking",
-        desc: 'We have hike escapades once every month to hills and mountains in East Africa.'
+        title: "Safari EcoTours & Hikes",
+        desc: 'We have safari ecotours & hike escapades once every month to hills and mountains in East Africa.'
     },
     {
         imgUrl: customizationImg,
-        title: "Staycations",
-        desc: 'Holiday at home away from home any place in Kenya and even abroad'
+        title: "Corporate Events",
+        desc: 'The package include custom made conferences, team building, end year parties and cocktails. The packages could be client proposed or AFEL recommended destinations/ facilities.'
     },
 ]
 
