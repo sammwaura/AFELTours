@@ -2,14 +2,14 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 import { Col } from 'reactstrap';
 
-import weatherImg from '../assets/images/team.png'
+import staycationImg from '../assets/images/tour.jpg'
 import guideImg from '../assets/images/hike.png'
 import customizationImg  from '../assets/images/stayca.png'
 
 
 const servicesData = [
     {
-        imgUrl: weatherImg,
+        imgUrl: staycationImg,
         title: "Resort Staycations",
         desc: 'This is being our main service, we are committed to seeing our clients, both citizens & non-citizen staycate to resorts & villas that we have contracts with'
     },
