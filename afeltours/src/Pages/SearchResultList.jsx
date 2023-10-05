@@ -16,7 +16,7 @@ const SearchResultList = () => {
         {
           data.length ===0 ? <h4> No tour found</h4> : 
           data?.map(tour => (
-            <Col lg='3' className='mb-4' key={tour._id}>
+            <Col lg='3' className='mb-4' key={tour.id}>
               <TourCard tour={tour} />
             </Col>
           ))
@@ -33,3 +33,4 @@ const SearchResultList = () => {
 }
 
 export default SearchResultList;
+

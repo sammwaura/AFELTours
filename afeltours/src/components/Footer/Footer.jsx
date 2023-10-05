@@ -47,8 +47,10 @@ const Footer = () => {
           <Col lg='3'>
             <div className="logo">
               <img src={ logo } alt="" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum error debitis blanditiis autem vel quae soluta corporis facilis inventore doloribus. Eaque atque quas quam enim. 
-                Tempora ullam quas modi doloremque?
+              <p>AFEL stands for African Forests Escapade Limited. 
+                  We are a limited company registered in Kenya to
+                  promote eco-tourism and conservation of nature. The headquarters are in Nairobi, Colours house,
+                   Ruaraka, off Outering Road.
               </p>
               <div className="social__links d-flex align-items-center gap-4">
                 <span>

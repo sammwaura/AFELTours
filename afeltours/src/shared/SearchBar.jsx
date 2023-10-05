@@ -27,10 +27,12 @@ const SearchBar = () => {
 
         const result = await res.json();
 
-        navigate(`/tours/search/getTourBySearch?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`,
+        navigate(`/tours/search?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`,
          { state: result.data }
          );
+   
     };
+ 
 
 
   return (
