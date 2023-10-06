@@ -2,9 +2,9 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 import { Col } from 'reactstrap';
 
-import staycationImg from '../assets/images/tour.jpg'
-import guideImg from '../assets/images/hike.png'
-import customizationImg  from '../assets/images/stayca.png'
+import staycationImg from '../assets/images/staya.jpg'
+import guideImg from '../assets/images/maraaaaa.jpg'
+import corporateImg  from '../assets/images/corporate.jpeg'
 
 
 const servicesData = [
@@ -19,7 +19,7 @@ const servicesData = [
         desc: 'We have safari ecotours & hike escapades once every month to hills and mountains in East Africa.'
     },
     {
-        imgUrl: customizationImg,
+        imgUrl: corporateImg,
         title: "Corporate Events",
         desc: 'The package include custom made conferences, team building, end year parties and cocktails. The packages could be client proposed or AFEL recommended destinations/ facilities.'
     },

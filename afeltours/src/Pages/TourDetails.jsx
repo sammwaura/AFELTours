@@ -79,16 +79,18 @@ const TourDetails = () => {
         body: JSON.stringify(reviewObj),
       });
 
-      const result = await res.json();
-      if (!res.ok) {
-        return alert(result.message);
+      if(!res.ok){
+        //check for non-2xx status codes(404)
+        const errorMessage = await res.text();
+        console.error(`Failed to submit review. StatusCode: ${res.status}, Error: ${errorMessage}`);
+      } else {
+        const result = await res.json();
+        alert(result.message);
       }
-
-      alert(result.message);
-    } catch (err) {
-      alert(err.message);
+    } catch (err){
+      console.error('Network error:', err)
     }
-  };
+  }
 
   
 
@@ -123,7 +125,7 @@ const TourDetails = () => {
   
               <div className="tour__extra-details">
                 <span><i class="ri-map-pin-2-line"></i>{city}</span>
-                <span><i class="ri-money-dollar-circle-line"></i> Ksh{price} / PPS </span>
+                <span><i class="ri-money-dollar-circle-line"></i> Ksh {price} / PPS </span>
                 <span><i class="ri-group-line"></i>group of {maxGroupSize}</span>
               </div>
               <h5>Description</h5>

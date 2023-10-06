@@ -12,7 +12,6 @@ const SearchBar = () => {
 
 
     const searchHandler = async () => {
-        
         const area = areaRef.current.value
         const location = locationRef.current.value
         const maxGroupSize = maxGroupSizeRef.current.value
@@ -20,20 +19,30 @@ const SearchBar = () => {
         if(area==='' || location==='' || maxGroupSize=== ''){
             return alert('All fields are required!!')
         }
+        try{
 
-        const res = await fetch(`http://localhost:4000/api/v1/tours/search/getTourBySearch?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`);
+            const res = await fetch(`http://localhost:4000/api/v1/tours/search/getTourBySearch?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`);
+            console.log('API Response:', res);
 
-        if(!res.ok) alert('Something went wrong');
+            if(!res.ok){
+                console.error('Network request error', res.status, res.statusText);
+                alert('Something went wrong');
+                return;
+            }
 
         const result = await res.json();
+        console.log('Search Result data:', result.data);
 
-        navigate(`/tours/search?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`,
-         { state: result.data }
-         );
-   
+        //update react state props here to trigger a re-render
+        //this is where you set data for tour cards
+
+        //navigate to the search result page
+        navigate(`/tours/search?title=${area}&city=${location}&maxGroupSize=${maxGroupSize}`, { state: result.data });
+        } catch (error){
+            console.error('Error:', error);
+            alert('Something went wrong');
+        }
     };
- 
-
 
   return (
     <Col lg='12'>
@@ -45,7 +54,7 @@ const SearchBar = () => {
                 </span>
                 <div>
                     <h6>Location</h6>
-                    <input type="text" placeholder='Which area you going?' ref={areaRef}/>  
+                    <input type="text" placeholder='enter region to travel' ref={areaRef}/>  
                 </div>
             </FormGroup>
             <FormGroup className='d-flex gap-3 form__group form__group-fast'>
@@ -54,7 +63,7 @@ const SearchBar = () => {
                 </span>
                 <div>
                     <h6>Resort/Villa</h6>
-                    <input type="text" placeholder='Which resort/villa?' ref={locationRef}/>
+                    <input type="text" placeholder='enter resort/villa?' ref={locationRef}/>
                 </div>
             </FormGroup>
            

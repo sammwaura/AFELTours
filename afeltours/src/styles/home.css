@@ -22,9 +22,9 @@
 }
 
 .hero__img-box img, .hero__img-box video{
-    width: 100%;
+    width: 110%;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 1px;
     border: 1px solid var(--secondary-color);
     object-fit: cover;
 }
@@ -34,7 +34,7 @@
 }
 
 .hero__img-box{
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .services__subtitle{

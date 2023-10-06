@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/home.css';
 import { Container, Row, Col } from 'reactstrap';
-import heroImg from '../assets/images/hero.jpg';
-import heroImg2 from '../assets/images/hero2.avif';
+import heroImg from '../assets/images/africa.jpg';
+import heroImg2 from '../assets/images/staya.jpg';
 import heroVid from '../assets/images/heroVid.mp4';
 import worldImg from '../assets/images/world.jpg';
 import Subtitle from '../shared/Subtitle';
@@ -14,6 +14,7 @@ import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonials';
 import Newsletter from '../shared/Newsletter';
+
 const Home = () => {
   return <>
     <section>
@@ -63,7 +64,7 @@ const Home = () => {
         <Row>
           <Col lg='3'>
             <h5 className='services__subtitle'>What we do</h5>
-            <h2 className='services__title'>We offer our best service & advice appropriately</h2>
+            <h2 className='services__title'>We offer top notch services</h2>
           </Col>
           <ServiceList />
         </Row>
@@ -76,7 +77,7 @@ const Home = () => {
         <Row>
           <Col lg='12' className='mb-5'>
             <Subtitle subtitle={'Explore Kenya'} />
-            <h2 className='featured__tour-title'>Our Staycation Destinations</h2>
+            <h2 className='featured__tour-title'>Our Popular Destinations</h2>
           </Col>
           <FeaturedTourList />
         </Row>
@@ -90,7 +91,7 @@ const Home = () => {
           <Col lg='6'>
             <div className="experience__content">
               <Subtitle subtitle={"Experience"} />
-                <h2>With all our experience <br /> we are committed to serve you </h2>
+                <h2>With our experience <br /> we are committed to serve you </h2>
                 <p>We exist to help you realize your dreams holiday, corporate events, and other outdoor activities in serene environment. 
                   We believe our clients deserves careful planning of your holiday/ events based on your resources and dedicated time. 
                   Working with you one-on-one, you will find a reliable and passionate tour operator capable of taking charge of your corporate events, 
