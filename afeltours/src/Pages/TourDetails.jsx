@@ -92,7 +92,8 @@ const TourDetails = () => {
     }
   }
 
-  
+  //format date
+  const options = {day:'numeric', month:'long', year:'numeric'}
 
   return (
     <>

@@ -21,7 +21,7 @@ export const createTour = async (req, res) => {
         .json
         ({
             success:false, 
-            message:'Not created. Try again'});
+            message:'Not created. Try again', error:err.message});
     }
 };
 

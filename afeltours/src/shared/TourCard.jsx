@@ -10,13 +10,17 @@ const TourCard = ({ tour }) => {
 
     const { totalRating, avgRating } = calculateAvgRating(reviews);
 
+    console.log(photo);
+
     
 
   return (
     <div className='tour__card'>
         <Card>
             <div className="tour__img">
-                <img src={photo} alt="tour-img" />
+            <img src={(tour.photo)} alt={tour.title} 
+                 onError={() => console.log('Image failed to load')} 
+                 />
                 {featured && <span>Featured</span>}   
             </div>
 

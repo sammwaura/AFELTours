@@ -16,7 +16,7 @@ export const register = async (req,res) => {
             username: req.body.username,
             email:req.body.email,
             password:hash,
-            photo:req.body.photo
+            photo: req.body.photo,
         });
 
         await newUser.save();
@@ -24,7 +24,7 @@ export const register = async (req,res) => {
         res.status(200).json({success:true, message: 'Successfully created'});
 
     } catch (err) {
-        res.status(500).json({success:false, message: 'Failed to create. Try again.'});
+        res.status(500).json({success:false, message: 'Failed to create. Try again.', error:err.message });
     }
 };
 

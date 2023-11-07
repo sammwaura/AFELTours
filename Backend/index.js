@@ -13,10 +13,7 @@ import bookingRoute from './routes/bookings.js';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
-const corsOptions = {
-    origin:true,
-    credentials:true
-}
+
  
 //database connection
 mongoose.set("strictQuery", false);
@@ -37,13 +34,18 @@ const connect = async () => {
 
 //middleware
 app.use(express.json());
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(cookieParser());
 app.use('/api/v1/auth', authRoute);
 app.use('/api/v1/tours', tourRoute);
 app.use('/api/v1/users', userRoute);
 app.use('/api/v1/review', reviewRoute);
 app.use('/api/v1/booking', bookingRoute);
+
+app.use((req, res, next) =>{
+    res.setHeader('Cache-Control', 'no-cache');
+    next();
+});
 
 
 app.listen(port, ()=>{

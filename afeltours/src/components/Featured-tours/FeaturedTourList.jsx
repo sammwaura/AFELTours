@@ -6,7 +6,10 @@ import useFetch from '../../hooks/useFetch.js';
 
 const FeaturedTourList = () => {  
 
-  const { data: featuredTours, loading, error } = useFetch('http://localhost:4000/api/v1/tours');
+  const { data: featuredTours, 
+    loading, 
+    error,
+   } = useFetch(`http://localhost:4000/api/v1/tours`);
 
   return (
     <>
@@ -14,7 +17,7 @@ const FeaturedTourList = () => {
     { error && <h4>{error}</h4> }
     {!loading && !error && 
      featuredTours?.map(tour => (
-      <Col lg='3' className='mb-4' key={tour._id}>
+      <Col lg='3' md='4' sm='6'  className='mb-4' key={tour._id}>
           <TourCard tour={tour} />
       </Col>
     ))}

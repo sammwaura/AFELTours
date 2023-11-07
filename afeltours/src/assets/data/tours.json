@@ -7,7 +7,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/bamburi.jpg",
+        "photo": "./images/bamburi.jpg",
         "featured": true
     },
     {
@@ -18,7 +18,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/leopard.webp",
+        "photo": "./images/leopard.webp",
         "featured": true
     },
     {
@@ -29,7 +29,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Mutara.jpg",
+        "photo": "./images/Mutara.jpg",
         "featured": true
     },
     {
@@ -40,7 +40,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/capella.jpg",
+        "photo": "./images/capella.jpg",
         "featured": true
     },
     {
@@ -51,7 +51,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 8,
-        "photo": "../images/maraaaaa.jpg",
+        "photo": "./images/maraaaaa.jpg",
         "featured": true
     },
     {
@@ -62,7 +62,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 8,
-        "photo": "../images/tawi.jpeg",
+        "photo": "./images/tawi.jpeg",
         "featured": true
     },
     {
@@ -73,7 +73,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 8,
-        "photo": "../images/Saltlick.jpg",
+        "photo": "./images/Saltlick.jpg",
         "featured": true
     },
     {
@@ -84,7 +84,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     },
     {
@@ -95,7 +95,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     },
     {
@@ -106,7 +106,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     },
     {
@@ -117,7 +117,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     },
     {
@@ -139,7 +139,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     },
     {
@@ -150,7 +150,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     },
     {
@@ -161,7 +161,7 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
-        "photo": "../images/Kajiado.webp",
+        "photo": "./images/Kajiado.webp",
         "featured": true
     }
 ]

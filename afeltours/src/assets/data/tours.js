@@ -27,7 +27,7 @@ const tours = [
         avgRating: 7,
         photo: tourImg,
         featured: true,
-    },
+    },  
     {
         id: 2,
         title:"South Coast",

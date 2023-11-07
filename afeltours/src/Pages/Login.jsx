@@ -9,8 +9,6 @@ import userIcon from '../assets/images/user.jpg';
 import { AuthContext } from '../context/AuthContext';
 import {BASE_URL} from './../utilis/config';
 
-
-
 const Login = () => {
 
   const [credentials, setCredentials] = useState({
