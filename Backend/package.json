@@ -7,7 +7,10 @@
   "scripts": {
     "start": "node index.js",
     "start-dev": "nodemon index.js",
+<<<<<<< HEAD
     "build": "react-scripts build",
+=======
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

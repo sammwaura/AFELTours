@@ -7,7 +7,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/bamburi.jpg",
+=======
+        "photo": "./images/bamburi.jpg",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -18,7 +22,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/leopard.webp",
+=======
+        "photo": "./images/leopard.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -29,7 +37,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Mutara.jpg",
+=======
+        "photo": "./images/Mutara.jpg",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -40,7 +52,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/capella.jpg",
+=======
+        "photo": "./images/capella.jpg",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -51,7 +67,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 8,
+<<<<<<< HEAD
         "photo": "../images/maraaaaa.jpg",
+=======
+        "photo": "./images/maraaaaa.jpg",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -62,7 +82,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 8,
+<<<<<<< HEAD
         "photo": "../images/tawi.jpeg",
+=======
+        "photo": "./images/tawi.jpeg",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -73,7 +97,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 8,
+<<<<<<< HEAD
         "photo": "../images/Saltlick.jpg",
+=======
+        "photo": "./images/Saltlick.jpg",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -84,7 +112,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -95,7 +127,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -106,7 +142,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -117,7 +157,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -139,7 +183,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -150,7 +198,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     },
     {
@@ -161,7 +213,11 @@
         "desc": "this is the description",
         "reviews": [],
         "avgRating": 7,
+<<<<<<< HEAD
         "photo": "../images/Kajiado.webp",
+=======
+        "photo": "./images/Kajiado.webp",
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
         "featured": true
     }
 ]

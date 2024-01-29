@@ -9,8 +9,12 @@
   },
   "keywords": [],
   "author": "",
+<<<<<<< HEAD
   "license": "ISC",
   "devDependencies": {
     "react-scripts": "^3.0.1"
   }
+=======
+  "license": "ISC"
+>>>>>>> 144c3efdc9ea2fd7a30bc32ad4a6b37d7a979eac
 }
